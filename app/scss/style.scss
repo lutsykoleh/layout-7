@@ -1,2 +1,8 @@
 @import "utils/_variables.scss";
 @import "layout/_header.scss";
+@import "layout/_main.scss";
+
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+}
