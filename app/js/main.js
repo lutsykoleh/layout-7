@@ -13,3 +13,12 @@ $(document).ready(function(){
         slidesToScroll:1,
     })
 })
+
+$(document).ready(function(){
+    $('.features-desc-slider').slick({
+        arrows: false,
+        dots: true,
+        slidesToShow:1,
+        slidesToScroll:1,
+    })
+})
