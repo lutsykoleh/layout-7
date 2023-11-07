@@ -1,0 +1,63 @@
+.footer {
+    &__inner {
+        .footer__copyright {
+            &__text {
+                margin-left: -21px;
+                font-size: 18px;
+                color: #666666;
+                font-weight: bold;
+                font-family: "Montserrat";
+                margin-top: 95px;
+                margin-bottom: 112px;
+            }
+        }
+
+        .footer__subscribe {
+            &__title {
+                font-size: 16px;
+                line-height: 24px;
+                color: #666666;
+                font-weight: 400;
+                font-family: "Varela Round";
+                margin: 59px 92px 13px 93px;
+            }
+
+            &__form {
+                margin-left: 90px;
+                display: flex;
+
+                &__input {
+                    max-width: 312px;
+                    padding: 23px 17px;
+
+                    &:focus{
+                        border-color: #f06464;
+                        box-shadow: 0 0 0 0.2rem rgba(240,100,100,.25);;
+                    }
+
+                    &::placeholder {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #666666;
+                        font-weight: 400;
+                        font-family: "Varela Round";
+                    }
+                }
+
+                &__btn {
+                    margin-left: 10px;
+                    width: 102px;
+                    height: 49px;
+                    background: #f06464;
+                    color: #fff;
+                    border: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #f4f4f4;
+                    font-weight: 400;
+                    font-family: "Varela Round";
+                }
+            }
+        }
+    }
+}
