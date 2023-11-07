@@ -1,0 +1,150 @@
+.download {
+    background-color: $main-red;
+
+    &-inner {
+        .download-logo {
+            padding: 222px 0 141px 89px;
+        }
+
+        .download-desc {
+            padding: 168px 0 0 0;
+            &-quote {
+                &__text {
+                    font-size: 46px;
+                    color: #fff;
+                    padding: 0 0 20px 5px;
+                    letter-spacing: 1.25px;
+                    font-weight: bold;
+                    line-height: 57px;
+                    font-family: "Montserrat";
+                }
+
+                &__author {
+                    font-size: 24px;
+                    margin-left: 4px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-family: "Varela Round";
+                }
+            }
+            &-btn{
+                margin-top: 43px;
+                display: flex;
+                .btn-download{
+                    display: flex;
+                    align-items: center;
+                    width: 257px;
+                    height: 77px;
+                    border: 3px solid $white;
+                    border-radius: 5px;
+                    font-size: 30px;
+                    font-weight: 400;
+                    font-family: "Varela Round";
+                    color: #ffffff;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: rgba(39,35,36,0.4);
+                      }
+
+                    &:nth-child(1){
+                        margin-left: 5px;
+                    }
+                    &:nth-child(2){
+                        margin-left: 28px;
+                    }
+
+                    .download-desc-btn-app{
+                        margin: auto 17px;
+                    }
+                    .download-desc-btn-pm{
+                        margin: 16px 18px 14px 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1150px){
+    .download{
+        &-inner{
+            .download-desc{
+                &-btn{
+                    .btn-download{
+                        width: 230px;
+                        &:nth-child(1){
+                            margin-left: 0;
+                        }
+                        &:nth-child(2){
+                            margin-left: 15px;
+                        }
+                        .download-desc-btn-app{
+                            margin: auto 10px;
+                        }
+                        .download-desc-btn-pm{
+                            margin: 16px 10px 14px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:992px){
+    .download{
+        &-inner{
+            .download-logo{
+                padding: 50px 0 0 0;
+                text-align: center;
+                img{
+                    padding-left: 143px;
+                }
+            }
+            .download-desc{
+                padding: 0;
+                text-align: center;
+                margin-bottom: 50px;
+                &-btn{
+                    display: flex;
+                    justify-content: center;
+                    .btn-download{
+        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:530px){
+    .download{
+        &-inner{
+            .download-logo{
+                img{
+                    height: 178px;
+                    padding-left: 71px;
+                }
+            }
+            .download-desc{
+                &-btn{
+                    display: block;
+                    .btn-download{
+                        width: 257px;
+                        height: 77px;
+
+                        &:nth-child(1){
+                            margin: 0 auto;
+                        }
+                        &:nth-child(2){
+                            margin: 15px auto 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

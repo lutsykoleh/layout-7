@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 
 
-// Выбираем все кнопки с классом heart-icon и все элементы с количеством лайков
+
 const likeBtns = document.querySelectorAll('.TWA-gallery__item-desc__likes__heart-icon');
 
 // Функция для обработки кликов по кнопкам лайков
