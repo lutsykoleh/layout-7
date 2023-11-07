@@ -1,0 +1,187 @@
+.TWA {
+
+  .TWA-desc{
+    margin-left: 73px;
+    .TWA__title {
+      font-size: 48px;
+      color: #f06464;
+      font-weight: bold;
+      font-family: "Montserrat";
+      margin-top: 71px;
+      margin-bottom: 25px;
+    }
+  
+    .TWA__text {
+      font-size: 18px;
+      line-height: 27px;
+      color: #666666;
+      font-weight: 400;
+      font-family: "Varela Round";
+      width: 443px;
+      height: 97px;
+      margin-bottom: 62px;
+      margin-left: 5px;
+    }
+  }
+}
+
+
+.container-fluid {
+  padding: 0;
+  width: 100%;
+}
+
+.TWA-gallery {
+  display: flex;
+
+  &__item {
+    flex: 1;
+    padding-top: 80px;
+    height: 519px;
+    position: relative;
+
+    &:hover {
+      .TWA-gallery__item__main-img {
+        transform: translateY(-15%);
+      }
+
+      .TWA-gallery__item-desc {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    &__main-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 519px;
+      object-fit: cover;
+      transition: all 0.4s;
+      z-index: 1;
+    }
+
+    &-desc {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      bottom: 0;
+      background-color: #151515;
+      padding: 0 35px;
+      opacity: 0;
+      transition: all 0.4s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      transform: translateY(100%);
+      transition: transform 0.4s, opacity 0.4s;
+
+      &__title {
+        font-size: 18px;
+        line-height: 27px;
+        color: #c2c2c2;
+        font-weight: 400;
+        font-family: "Varela Round";
+      }
+
+      &__likes {
+        display: flex;
+
+        &__heart-icon {
+          border: none;
+          background: none;
+
+          img {
+            width: 25px;
+            height: 21px;
+            margin: 0;
+          }
+        }
+
+        &__number-of-likes {
+          font-size: 24px;
+          line-height: 27px;
+          color: #f06464;
+          font-weight: 400;
+          font-family: "Varela Round";
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .TWA {
+    .TWA-desc{
+      .TWA__text{
+        margin-bottom: 0px;
+      }
+    }
+    .TWA-gallery{
+      &__item{
+        height: 400px;
+        padding-top: 0px;
+        &__main-img{
+          height: 400px;
+          padding-top: 50px;
+        }
+        &-desc{
+          &__title{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1000px){
+  .TWA{
+    .TWA-desc{
+      margin-left: 0;
+      text-align: center;
+      .TWA__title{
+
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      .TWA__text{
+        text-align: center;
+        line-height: 24px;
+        margin: 0 auto;
+      }
+    }
+    .TWA-gallery{
+      display: block;
+      &__item{
+        width: 519px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+@media(max-width:535px){
+  .TWA{
+    .TWA-desc{
+      .TWA__title{
+        font-size: 32px;
+      }
+      .TWA__text{
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .TWA-gallery{
+      &__item{
+        width: 100%;
+      }
+    }
+  }
+}
