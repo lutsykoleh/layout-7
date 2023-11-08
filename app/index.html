@@ -17,12 +17,44 @@
 <body>
     <header class="header">
         <div class="container">
-            
-        </div>
+            <nav class="header__navbar navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="header__container container-fluid">
+                    <a class="header__logo navbar-brand">ama</a>
+                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse justify-content-end">
+                        <ul class="header__list-items navbar-nav">
+                            <li class="header__list-item nav-item active">
+                                <a class="nav-link" href="#">Hello</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Overview</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Share</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Download</a>
+                            </li>
+                            <li class="header__list-item nav-item">
+                                <a class="nav-link" href="#">Compatibility</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>    
     </header>
+
     <main class="main">
-
-
         <div class="main-slider">
             <div class="main-slider-items col-12">
                 <div class="main-slider-item">
@@ -337,15 +369,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner row">
-                <div class="footer__copyright col-xl-6">
+                <div class="footer__copyright col-md-6 col-12">
                     <p class="footer__copyright__text">© 2014 ama. All Rights Reserved.</p>
                 </div>
-                <div class="footer__subscribe col-xl-6">
+                <div class="footer__subscribe col-md-6 col-12">
                     <p class="footer__subscribe__title">Subscribe our email newsletter.</p>
-                    <div class="footer__subscribe__form">
-                        <input class="footer__subscribe__form__input form-control" type="text" placeholder="Your email">
-                        <button class="footer__subscribe__form__btn btn-sm">Submit</button>
-                    </div>
+                    <form class="footer__subscribe__form">
+                        <input class="footer__subscribe__form__input form-control" type="email" placeholder="Your email"
+                            required>
+                        <button class="footer__subscribe__form__btn btn-sm" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

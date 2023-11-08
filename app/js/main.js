@@ -68,3 +68,13 @@ likeBtns.forEach(btn => {
 
     btn.addEventListener('click', likeClick);
 });
+
+
+// smoothscroll
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top-100
+    }, 500);
+    return false;
+});
