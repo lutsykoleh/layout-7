@@ -3,10 +3,10 @@
 
     &-inner {
         .share__bg-img {
-            margin-top: 71px;
-            padding: 0 !important;
+            padding: 71px 0 0 0;
             img{
                 bottom: 0;
+                margin-left: 8px;
                 margin-bottom: -3px;
             }
         }
@@ -25,8 +25,8 @@
                     font-weight: bold;
                     font-family: "Montserrat";
                     letter-spacing: 1.19px;
-                    margin-bottom: 25px;
-                    margin-left: 3px;
+                    margin-bottom: 23px;
+                    margin-left: 11px;
                 }
 
                 &-desc {
@@ -37,13 +37,13 @@
                     color: #aeaeae;
                     font-weight: 400;
                     font-family: "Varela Round";
-                    margin-left: 6px;
+                    margin-left: 14px;
                 }
             }
 
             &-slider {
                 max-width: 500px;
-                margin-left: 6px;
+                margin-left: 14px;
                 overflow: hidden;
 
                 .slick-list {
@@ -166,11 +166,16 @@
             .share__desc {
                 &-text {
                     &-title {
+                        margin-left: 0;
                         font-size: 35px;
+                    }
+                    &-desc {
+                        margin-left: 0;
+                        padding: 0 7px;
                     }
                 }
                 &-slider {
-                    max-width: 299px;
+                    max-width: 289px;
 
                     .slick-dots{
                         margin-top: 15px;

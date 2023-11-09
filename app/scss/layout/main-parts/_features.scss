@@ -3,14 +3,14 @@
 
     &-inner {
         .features-desc {
-            padding-left: 87px;
+            padding: 0 0 0 96px;
 
             &-text {
                 display: flex;
                 flex-direction: column;
 
                 &-title {
-                    margin-top: 170px;
+                    margin-top: 168px;
                     margin-bottom: 28px;
                     margin-left: 3px;
                     font-size: 48px;
@@ -37,7 +37,7 @@
 
             &-slider {
                 margin-left: 6px;
-                margin-right: 6px;
+                margin-right: 13px;
 
                 .slick-list {
                     overflow: hidden;
@@ -99,7 +99,7 @@
 
         .features-bg-img {
             margin-top: 40px;
-            margin-left: 5px;
+            margin-left: 13px;
             padding: 0;
 
             img {

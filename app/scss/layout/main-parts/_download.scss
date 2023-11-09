@@ -3,7 +3,7 @@
 
     &-inner {
         .download-logo {
-            padding: 222px 0 141px 89px;
+            padding: 222px 0 141px 96px;
         }
 
         .download-desc {
@@ -12,7 +12,7 @@
                 &__text {
                     font-size: 46px;
                     color: #fff;
-                    padding: 0 0 20px 5px;
+                    padding: 0 0 20px 12px;
                     letter-spacing: 1.25px;
                     font-weight: bold;
                     line-height: 57px;
@@ -21,14 +21,14 @@
 
                 &__author {
                     font-size: 24px;
-                    margin-left: 4px;
+                    margin-left: 13px;
                     color: #ffffff;
                     font-weight: 400;
                     font-family: "Varela Round";
                 }
             }
             &-btn{
-                margin-top: 43px;
+                margin-top: 41px;
                 display: flex;
                 .btn-download{
                     display: flex;
@@ -48,7 +48,7 @@
                       }
 
                     &:nth-child(1){
-                        margin-left: 5px;
+                        margin-left: 13px;
                     }
                     &:nth-child(2){
                         margin-left: 28px;

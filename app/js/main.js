@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.main-slider-items').slick({
+    $('.main-slider__items').slick({
         arrows: false,
         dots: true,
     })
@@ -29,39 +29,35 @@ $(document).ready(function(){
 
 const likeBtns = document.querySelectorAll('.TWA-gallery__item-desc__likes__heart-icon');
 
-// Функция для обработки кликов по кнопкам лайков
+// Function for processing clicks on likes buttons
 function likeClick() {
-    // Получаем элемент с количеством лайков, который находится в том же контейнере, что и кнопка
+
     const numberOfLikesElement = this.parentNode.querySelector('.TWA-gallery__item-desc__likes__number-of-likes');
     let numberOfLikes = Number.parseInt(numberOfLikesElement.textContent, 10);
 
-    // Получаем изображение внутри кнопки
     const heartImage = this.querySelector('img');
 
-    // Проверяем, есть ли у кнопки класс isLiked
     if (!this.classList.contains('isLiked')) {
         this.classList.add('isLiked');
         numberOfLikes++;
-        heartImage.src = '/images/TWA/heart-icon/heart-solid.png'; // Путь к вашему изображению заполненного сердца
+        heartImage.src = '/images/TWA/heart-icon/heart-solid.png'; 
     } else {
         this.classList.remove('isLiked');
         numberOfLikes--;
-        heartImage.src = '/images/TWA/heart-icon/heart-regular.png'; // Путь к вашему изображению не заполненного сердца
+        heartImage.src = '/images/TWA/heart-icon/heart-regular.png'; 
     }
-    // Обновляем количество лайков на странице
     numberOfLikesElement.textContent = numberOfLikes;
 }
 
-// Добавляем обработчик событий для каждой кнопки лайка
+// Add an event handler for each like button
 likeBtns.forEach(btn => {
-    // Устанавливаем начальное изображение сердца
+
     const heartImage = btn.querySelector('img');
     if (heartImage) {
-        heartImage.src = '/images/TWA/heart-icon/heart-regular.png'; // Убедитесь, что это правильный путь к вашему изображению
+        heartImage.src = '/images/TWA/heart-icon/heart-regular.png'; 
     } else {
-        // Если внутри кнопки нет изображения, создаем его
         const newHeartImage = document.createElement('img');
-        newHeartImage.src = '/images/TWA/heart-icon/heart-regular.png'; // Путь к вашему изображению не заполненного сердца
+        newHeartImage.src = '/images/TWA/heart-icon/heart-regular.png'; 
         newHeartImage.alt = 'Like';
         btn.appendChild(newHeartImage);
     }
@@ -71,10 +67,16 @@ likeBtns.forEach(btn => {
 
 
 // smoothscroll
-var $page = $('html, body');
-$('a[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-100
-    }, 500);
-    return false;
-});
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for(let anchor of anchors) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault()
+      const blockID = anchor.getAttribute('href').substr(1)
+      const offset = document.getElementById(blockID).offsetTop - 98; // Subtracting the header size
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth'
+      });
+    });
+  }
